@@ -56,7 +56,7 @@ function init() {
   },
   {
     iconLayout: 'default#image',
-    iconImageHref: '/assets/build/img/icons/icon-placeholder.svg',
+    iconImageHref: '/ligaavtoshkol/assets/build/img/icons/icon-placeholder.svg',
     iconImageSize: [37, 44.6],
     iconImageOffset: [-19,-42],
   });
