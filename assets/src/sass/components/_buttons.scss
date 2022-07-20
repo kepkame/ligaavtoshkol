@@ -1,0 +1,44 @@
+// Button styles
+
+.btn {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    background-color: $color-primary;
+    border: none;
+    border-radius: 8px;
+    margin: 0;
+    padding: 8px 22px;
+    cursor: pointer;
+    opacity: 1;
+    transition: background-color 0.2s ease-in;
+
+    &--big {
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 13px 30px;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: mix($color-primary, #ffffff, 80);
+        outline: none;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &--big {
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+    }
+}

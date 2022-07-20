@@ -1,0 +1,49 @@
+// Forms
+
+.form-simple__row {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.form-simple label {
+    @extend .visually-hidden;
+}
+
+input:not([type="submit"]) {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: $border-radius;
+    padding: 13px 25px;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px rgba($color-primary, 1);
+    }
+}
+
+.form-simple__btn {
+    white-space: normal;
+}
+
+.form-simple__row--agree {
+    display: none;
+}
+
+.form-simple__row--response-output {
+    display: none;
+    border: 2px solid $color-primary;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.form-simple.sent .form-simple__row--response-output {
+    display: block;
+    color: mix($color-success, #000000, 50);
+    background-color: mix($color-success, #ffffff, 30);
+    border-color: $color-success;
+}

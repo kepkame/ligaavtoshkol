@@ -1,0 +1,133 @@
+// Other global styles (h1, ul, visually-hidden, etc.)
+
+body {
+    font-family: $ff-base;
+    color: $text-color;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+h5, h6 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 15px 0;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 12px 0;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 8px 0;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 6px 0;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 6px 0;
+}
+
+p, a, li {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+
+    &:not(.btn):focus,
+    &:not(.btn):hover {
+        color: $color-primary;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-small {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    bottom: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 850px) {
+    h1 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+    
+    h2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    
+    h3 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .container {
+        max-width: 1230px;
+        margin: 0 auto;
+    }
+}
